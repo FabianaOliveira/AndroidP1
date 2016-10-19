@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">TrabalhoP1</string>
+    <string name="bem_vindo">Bem-vindo ao AppEstudos!</string>
+    <string name="usuario">EMAIL DO USUÁRIO</string>
+    <string name="senha">SENHA DO USUÁRIO</string>
+    <string name="bt_acessar">ACESSAR</string>
+    <string name="bt_limpar">LIMPAR</string>
+
+    <string name="tarefa">Selecione a Tarefa</string>
+
+    <string-array name="lista_curso">
+        <item>Processo e Qualidade de Software</item>
+        <item>Sistemas Operacionais II</item>
+        <item>Desenvolvimento para Dispositivos Móveis</item>
+        <item>Projeto Integrador I</item>
+        <item>Teste de Software</item>
+        <item>Linguagem de programação IV</item>
+    </string-array>
+
+    <string-array name="lista_aula">
+        <item>Aula 1 - Introdução</item>
+        <item>Aula 2 - Materia xyz</item>
+        <item>Aula 2 - Laboratório xyz</item>
+        <item>Aula 3 - Materia abc</item>
+        <item>Aula 3 - Laboratório abc</item>
+    </string-array>
+
+    <string name="exercicio">Exercício Feito?</string>
+    <string name="laboratorio">Laboratório Enviado?</string>
+    <string name="btProgresso">Progresso</string>
+    <string name="btCadastro">Cadastro</string>
+    <string name="btSair">Sair</string>
+
+
+    <string name="Cadastro">Cadastro do Aluno</string>
+    <string name="nome_aluno">Nome</string>
+    <string name="matricula">Matrícula</string>
+    <string name="email">E-mail</string>
+    <string name="conta_github">Conta GitHub</string>
+    <string name="bt_cadastrar">Cadastrar</string>
+    <string name="bt_limpar2">Limpar</string>
+
+
+    <string name="progressoAulas">Progresso das Aulas</string>
+    <string name="aulasDadas">Aulas Dadas</string>
+    <string name="exerciciosFeitos">Exercícios Feitos</string>
+    <string name="laboratoriosEnviados">Laboratórios Enviados ao GitHub</string>
+    <string name="btVoltar">Voltar</string>
+
+
+
+</resources>

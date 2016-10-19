@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentLeft="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+                <TextView
+                    android:text="@string/Cadastro"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewCadastro"
+                    android:textSize="25sp"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center"
+                    android:textStyle="normal|bold"/>
+
+        </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true">
+
+                        <Button
+                            android:id="@+id/btCadastrar"
+                            android:text="@string/bt_cadastrar"
+                            android:layout_width="wrap_content"
+                            android:width="1dp"
+                            android:elevation="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="74dp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="74dp"
+                            android:id="@+id/btLimpar"
+                            android:text="@string/bt_limpar2"
+                            android:width="1dp"
+                            android:layout_weight="1"
+                            android:elevation="0dp" />
+
+                </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_below="@+id/linearLayout4"
+                            android:layout_marginTop="69dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:ems="10"
+                            android:id="@+id/editTextCadastraNome"
+                            android:layout_weight="1"
+                            android:text="@string/nome_aluno" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:ems="10"
+                            android:id="@+id/editTextMatricula"
+                            android:layout_weight="1"
+                            android:text="@string/matricula" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textEmailAddress"
+                            android:ems="10"
+                            android:id="@+id/editTextEmail"
+                            android:layout_weight="1"
+                            android:text="@string/email" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:ems="10"
+                            android:id="@+id/editTextConta"
+                            android:layout_weight="1"
+                            android:text="@string/conta_github" />
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:id="@+id/spinnerCurso"
+                            android:entries="@array/lista_curso"
+                            android:layout_weight="1"
+                            android:layout_height="60dp"
+                            android:spinnerMode="dropdown" />
+                </LinearLayout>
+</RelativeLayout>

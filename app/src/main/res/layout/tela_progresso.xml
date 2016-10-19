@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewProgresso"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:text="@string/progressoAulas"
+                android:textStyle="normal|bold"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="90dp"
+            android:id="@+id/linearLayout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/textViewProgAula"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="@string/aulasDadas" />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:id="@+id/ProgressBarProgAulas"
+                android:max="100"
+                android:progress="30"
+                android:indeterminate="false" />
+
+            <TextView
+                android:text="@string/exerciciosFeitos"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:id="@+id/textViewProgExercicio"
+                android:textSize="20sp"
+                android:gravity="center" />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:id="@+id/ProgressBarProgExecs"
+                android:max="100"
+                android:progress="60"
+                android:indeterminate="false" />
+
+            <TextView
+                android:text="@string/laboratoriosEnviados"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:id="@+id/textViewProgLaboratorio"
+                android:textSize="20sp"
+                android:gravity="center" />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:id="@+id/ProgressBarProgLabs"
+                android:max="100"
+                android:progress="90"
+                android:indeterminate="false" />
+        </LinearLayout>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btVoltar"
+            android:id="@+id/bt_Voltar"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp" />
+
+</RelativeLayout>
