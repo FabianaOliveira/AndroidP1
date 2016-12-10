@@ -1,11 +1,13 @@
 package com.example.fabiana.trabalhop1;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -15,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText usuarioEditText;
     private EditText senhaEditText;
     private TextView resultadoTextView;
+    private ImageView mImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btAcessar = (Button) findViewById(R.id.buttonAcessar);
-        btLimpar = (Button)findViewById(R.id.buttonLimpar);
+        //btLimpar = (Button)findViewById(R.id.buttonLimpar);
         usuarioEditText = (EditText) findViewById(R.id.usuarioEditText);
         senhaEditText = (EditText) findViewById(R.id.senhaEditText);
         resultadoTextView = (TextView) findViewById(R.id.resultadoTextView);
@@ -60,6 +63,25 @@ public class MainActivity extends AppCompatActivity {
 
     private void limparButtonAction() {
     }
+
+    public void onClick(View v){
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                final Bitmap bitmap =
+                        loadImageFromNetwork("http://www.assuncao.g12.br/imagens/logo.png");
+                mImageView.post(new Runnable(){
+                    public void run (){
+                        mImageView.setImageBitmap(bitmap);
+                    }
+                });
+            }
+
+            private Bitmap loadImageFromNetwork(String s) {
+            }
+        }).start();
+    }
+
 
 
 }

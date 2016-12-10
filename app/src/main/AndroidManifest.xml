@@ -16,6 +16,17 @@
             </intent-filter>
         </activity>
         <activity android:name=".TelaCadastro"></activity>
+        <activity android:name=".TelaTarefa" />
+        <activity android:name=".TelaProgresso" />
+        <receiver android:name=".MeuReceiverTelefonico">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.PHONE_STATE">
+                </action>
+            </intent-filter>
+        </receiver>
     </application>
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
 
 </manifest>
